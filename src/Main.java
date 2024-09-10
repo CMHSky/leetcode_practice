@@ -161,8 +161,49 @@ public class Main {
 //        String num = "1111101";
 //        System.out.println(app.minimumOperations(num));
 
-        FindValueOfPartition app = new FindValueOfPartition();
-        int[] nums = {100,1,10};
-        System.out.println(app.findValueOfPartition(nums));
+//        FindValueOfPartition app = new FindValueOfPartition();
+//        int[] nums = {100,1,10};
+//        System.out.println(app.findValueOfPartition(nums));
+
+//        CalPoints app = new CalPoints();
+//        String[] ops = {"5","2","C","D","+"};
+//        System.out.println(app.calPoints(ops));
+
+//        Permute app = new Permute();
+//        int[] nums = {0,1};
+//        System.out.println(app.permute(nums));
+
+//        CoinChange app = new CoinChange();
+//        int[] coins = {1, 2, 5};
+//        System.out.println(app.coinChange(coins, 11));
+
+//        TopK app = new TopK();
+//        int[] nums = {3,2,3,1,2,4,5,5,6};
+//        System.out.println(app.findKthLargest(nums, 4));
+//        System.out.println(Arrays.toString(nums));
+
+//        Sort app = new Sort();
+//        int[] nums = {3,2,3,1,2,4,5,5,6};
+
+//        LengthOfLongestSubstring app = new LengthOfLongestSubstring();
+//        String s = "abcabcbb";
+//        System.out.println(app.lengthOfLongestSubstring(s));
+
+//        MinSubArrayLen app = new MinSubArrayLen();
+//        int[] nums = {5,1,3,5,10,7,4,9,2,8};
+//        System.out.println(app.minSubArrayLen(15, nums));
+
+//        MinStack minStack = new MinStack();
+//        minStack.push(-2);
+//        minStack.push(0);
+//        minStack.push(-3);
+//        System.out.println(minStack.getMin());
+//        minStack.pop();
+//        System.out.println(minStack.top());
+//        System.out.println(minStack.getMin());
+
+        LetterCombinations app = new LetterCombinations();
+        String digits = "234";
+        System.out.println(app.letterCombinations(digits));
     }
 }
