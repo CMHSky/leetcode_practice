@@ -1,7 +1,7 @@
 package MultiThread;
 
-// 创建线程方式一：继承Thread类，重写run()方法，调用start开启线程
-public class TestThread1 extends Thread {
+// 创建线程方式二：实现Runnable接口，重写run()方法，执行线程需要丢入runnable接口实现类，调用start开启线程
+public class TestRunnable implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 20; i++) {
@@ -11,11 +11,10 @@ public class TestThread1 extends Thread {
 
     public static void main(String[] args) {
         // 创建一个线程对象
-        TestThread1 thread1 = new TestThread1();
+        TestRunnable runnable = new TestRunnable();
+        Thread thread = new Thread(runnable);
         // 调用start()方法开启线程
-        thread1.start();
-        // 直接调用run()方法并不会开启新的线程
-//        thread1.run();
+        thread.start();
 
         for (int i = 0; i < 20; i++) {
             System.out.println("main thread: " + i);
